@@ -32,7 +32,10 @@ class ValidatePasswordService(object):
         results.pop('calc_time', None)
         results.pop('guesses_log10', None)
         results.pop('crack_times_seconds', None)
+        results.pop('crack_times_display', None)
         results.pop('sequence', None)
+        results.pop('results', None)
+        results.pop('guesses', None)
 
         return {
             'valid': valid,
